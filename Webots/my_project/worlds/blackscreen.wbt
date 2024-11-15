@@ -1,0 +1,39 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/obstacles/protos/OilBarrel.proto"
+
+WorldInfo {
+  defaultDamping Damping {
+    linear 0.5
+    angular 0.5
+  }
+}
+Viewpoint {
+  orientation 0.0053997149283172945 0.0006288307537598246 -0.9999852237161186 2.9092042333694668
+  position 6.405790717097936 -40.1654613601675 0.6221866195254274
+  follow "Mavic 2 PRO"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 100 100
+}
+OilBarrel {
+  translation 0 100 0.44
+}
+Mavic2Pro {
+  hidden position_0_0 5.7179731161238495e-09
+  hidden position_5_0 2.7116102548861227e-05
+  hidden rotation_6 0 1 0 2.711610122514132e-05
+  hidden position_6_0 -0.0004994022070307986
+  hidden rotation_7 -1 0 0 0.0004994022074301751
+  translation 0 0 0
+  rotation 0.0019493859589791872 -0.004293259486079124 -0.9999888838468995 -1.2776683315040849
+  controller "tello_controller"
+}
